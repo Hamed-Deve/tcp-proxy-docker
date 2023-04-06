@@ -6,6 +6,6 @@ COPY tcp-proxy.sh /usr/bin/tcp-proxy
 
 ENTRYPOINT ["tcp-proxy"]
 
-EXPOSE 443/tcp
+EXPOSE 443
 
-EXPOSE 443/udp
+CMD tcp-proxy 91.107.139.147 443
